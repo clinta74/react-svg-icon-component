@@ -1,1 +1,0 @@
-{"version":3,"file":"example-icons.js","sourceRoot":"","sources":["../../src/icon/example-icons.ts"],"names":[],"mappings":"AAIC,CAAC;AAEF,MAAM,CAAC,MAAM,YAAY,GAAgB;IACrC,IAAI,EAAE;QACF,MAAM,EAAE,EAAE;QACV,KAAK,EAAE,EAAE;QACT,KAAK,EAAE,CAAC,qLAAqL,CAAC;KACjM;IACD,KAAK,EAAE;QACH,MAAM,EAAE,EAAE;QACV,KAAK,EAAE,EAAE;QACT,KAAK,EAAE,CAAC,qSAAqS,CAAC;KACjT;CACJ,CAAC"}
