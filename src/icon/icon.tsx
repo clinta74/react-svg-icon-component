@@ -15,7 +15,7 @@ type IconProps = {
   props: React.HTMLAttributes<SVGElement>,
 }
 
-export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, props }) => {
+export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, ...props }) => {
   const StyledSVG = styled.svg`
     fill: currentColor;
     display: inline-block;
@@ -40,7 +40,7 @@ export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, 
     }
   `;
 
-  const { className, ...attrs } = props;
+  const { className, ...attrs } = props.props;
   const fullClassName = classNames(className, {
     'padded': padded,
     'icon-lg': large,

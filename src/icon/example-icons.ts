@@ -1,6 +1,6 @@
 import { IconData } from './icon';
 
-interface IconLibrary {
+export interface IconLibrary {
     [key: string]: IconData,
 };
 

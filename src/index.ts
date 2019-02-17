@@ -1,2 +1,2 @@
-export { Icon } from './icon/icon';
-export { ExampleIcons } from './icon/example-icons';
+export { Icon, IconData } from './icon/icon';
+export { ExampleIcons, IconLibrary } from './icon/example-icons';
