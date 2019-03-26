@@ -1,7 +1,7 @@
 {
   "name": "react-svg-icon-host",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.3",
+  "description": "React icon control for SVG Icons",
   "main": "lib/index.js",
   "scripts": {
     "build": "npx tsc --pretty",

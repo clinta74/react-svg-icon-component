@@ -12,8 +12,7 @@ type IconProps = {
   icon: IconData,
   padded?: boolean,
   large?: boolean,
-  props: React.HTMLAttributes<SVGElement>,
-}
+} & React.HTMLAttributes<SVGElement>;
 
 export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, ...props }) => {
   const StyledSVG = styled.svg`
@@ -23,6 +22,7 @@ export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, 
     height: 1em;
     overflow: visible;
     vertical-align: -.125em;
+    width: auto;
 
     &.icon-100 {
         height: auto;
@@ -40,7 +40,7 @@ export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, 
     }
   `;
 
-  const { className, ...attrs } = props.props;
+  const { className, ...attrs } = props;
   const fullClassName = classNames(className, {
     'padded': padded,
     'icon-lg': large,
