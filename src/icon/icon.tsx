@@ -12,7 +12,6 @@ type IconProps = {
   icon: IconData,
   padded?: boolean,
   large?: boolean,
-  props: React.HTMLAttributes<SVGElement>,
   alt?: string,
 } & React.HTMLAttributes<SVGElement>
 
