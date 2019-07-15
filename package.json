@@ -1,9 +1,10 @@
 {
   "name": "react-svg-icon-host",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "prepare": "npm run clean & npm run build",
     "build": "npx tsc --pretty",
     "check": "npx tsc --noEmit",
     "clean": "npx rimraf lib/"
