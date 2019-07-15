@@ -13,9 +13,10 @@ type IconProps = {
   padded?: boolean,
   large?: boolean,
   props: React.HTMLAttributes<SVGElement>,
+  alt?: string,
 }
 
-export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, ...props }) => {
+export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, alt, ...props }) => {
   const StyledSVG = styled.svg`
     fill: currentColor;
     display: inline-block;
@@ -51,7 +52,8 @@ export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, 
       height={icon.height} 
       width={icon.width} 
       viewBox={`0 0 ${icon.width} ${icon.height}`} 
-      className={fullClassName} 
+      className={fullClassName}
+      aria-labelledby={alt}
       {...attrs}
     >
       {icon.paths.map((path, index) => <path key={index} d={path} />)}
