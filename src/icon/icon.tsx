@@ -14,8 +14,7 @@ type IconProps = {
   large?: boolean,
   props: React.HTMLAttributes<SVGElement>,
   alt?: string,
-  className?: string,
-}
+} & React.HTMLAttributes<SVGElement>
 
 export const Icon: React.FunctionComponent<IconProps> = ({ icon, padded, large, alt, ...props }) => {
   const StyledSVG = styled.svg`
