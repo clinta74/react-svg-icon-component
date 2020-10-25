@@ -1,6 +1,6 @@
 {
   "name": "react-svg-icon-host",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -26,14 +26,14 @@
   "homepage": "https://github.com/clinta74/react-svg-icon-host#readme",
   "dependencies": {
     "classnames": "^2.2.6",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "styled-components": "^4.1.3"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.7",
-    "@types/styled-components": "^4.1.10",
-    "rimraf": "^2.6.3",
-    "typescript": "^3.5.3"
+    "@types/classnames": "^2.2.10",
+    "@types/styled-components": "^4.4.3",
+    "rimraf": "^2.7.1",
+    "typescript": "^4.0.3"
   }
 }
